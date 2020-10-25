@@ -596,7 +596,7 @@ footer .inner-container {
 footer .inner-container .pic-of-me {
   width: 150px;
   height: 150px;
-  margin: 0 auto 24px;
+  margin: 0 auto 10px;
   border-radius: 50%;
   background: white;
   text-align: center;

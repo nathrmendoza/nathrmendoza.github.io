@@ -29,8 +29,14 @@
 
 @media screen and (max-width: 999px) {
     #main {padding: 24px 32px;}
+    footer .inner-container .message{left: 50%!important; top: 32px; transform: translate(-50%, 0);}
+    footer .inner-container .message:after {left: calc(50% - 10px);}
+    footer .inner-container .pic-of-me {margin-top: 64px;}
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 600px) {
     #main {padding: 24px;}
+    .backgrounds-row{display: block; margin: 0;}
+    .backgrounds-row:nth-child(3){margin-top: 32px;}
+    .backgrounds-col,.sec-col:last-child {width: 100%; max-width: 400px; margin: 0 auto; margin-bottom: 24px; text-align: center;}
 }

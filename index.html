@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hey there!</title>
     <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/responsive.css">
 </head>
 <body>
     <!--BANNER-->
@@ -28,13 +29,12 @@
                                 <img src="images/pic-of-me.jpg" alt="my-pic">
                             </aside>
                             <h3>Hey there!</h3>
-                            <p>I developed a strong passion for <strong>web development</strong>. I pursued it's <strong>Front-end</strong> side due to my interest in 
-                                <strong>user interface design</strong> and <strong>user experience</strong>. I'm <strong>very efficient</strong>, I tend to use tools that speed up the process
-                                of my development cycle without sacrificing <strong>flexibility</strong>. I also love to <strong>communicate</strong> first with my fellow coleagues to confirm major decisions
-                                that I would make. I'm very <strong>focused</strong> and <strong>committed</strong> to my tasks, but with this I know how to <strong>adapt</strong>
-                                when priorities are to be changed.</p>
+                            <p>Bonjour! je suis Nath, you're currently at my porfolio site, which means I'm probably looking for a new job 
+                                right now to feed my dogs. I'm a passionate <b>front-end programmer</b>, sprinkled with <b>object oriented programming</b>, 
+                                a dash of <b>good looks</b> and topping it all off with <b>musical talent</b>.</p>
                         </div>
                     </div>
+                    <span id="arrow-go-down"></span>
                 </div>
             </div>
         </div>
@@ -44,10 +44,11 @@
     <section id="main">
         <div id="cat-summary" class="fullcat">
             <h1>Summary</h1>
-            <p>I'm in my graduating year taking a Bachelor of Science degree in 
-                Entertainment and Multimedia Computing. My specialization is 
-                creating UI and UX concepts and applying them to web apps. I also specialize
-                in game design and its programming concepts.</p>
+            <p>I developed a strong passion for <strong>web development</strong>. I pursued it's <strong>Front-end</strong> side due to my interest in 
+                <strong>user interface design</strong> and <strong>user experience</strong>. I'm <strong>very efficient</strong>, I tend to use tools that speed up the process
+                of my development cycle without sacrificing <strong>flexibility</strong>. I also tend to <strong>communicate first</strong> with my fellow coleagues to confirm major decisions
+                that I would make. I'm very <strong>focused</strong> and <strong>committed</strong> to my tasks, and know how to <strong>adapt</strong>
+                when priorities are to be changed.</p>
         </div>
         <div id="cat-background" class="fullcat">
             <h1>Knowledge</h1>
@@ -56,27 +57,32 @@
             </p>
             <div class="backgrounds-row">
                 <div class="backgrounds-col">
-                    <img src="images/HTMLogo.png" alt="html" style="width: 150px;">
+                    <img src="images/HTMLogo.png" alt="html" style="height: 90px;">
+                    <h5>HTML5</h5>
                     <p>The backbone of all web apps. Fairly simple to learn, so I've picked it up early on.</p>
                 </div>
                 <div class="backgrounds-col">
-                    <img src="images/CSSLogo.png" alt="css" style="width: 150px;">
+                    <img src="images/CSSLogo.png" alt="css" style="height: 90px;">
+                    <h5>CSS3</h5>
                     <p>Fairly proficient at css. Now I tend to us <b>SCSS</b> preprocessor for efficiency</p>
                 </div>
                 <div class="backgrounds-col">
-                    <img src="images/JSLogo.png" alt="js" style="width: 150px;">
+                    <img src="images/JSLogo.png" alt="js" style="height: 90px;">
+                    <h5>Javascript</h5>
                     <p>Proficient at javascript. I create web features with this. Recently I've been using frameworks such as <b>JQuery</b> and <b>VueJs</b> to efficiently create diverse functionalities.</p>
                 </div>
             </div>
             <div class="backgrounds-row sec-row">
                 <div class="backgrounds-col sec-col">
-                    <img src="images/CSHARPLogo.png" alt="c#" style="width: 120px;">
+                    <img src="images/CSHARPLogo.png" alt="c#" style="height: 90px;">
+                    <h5>C# (Object oriented)</h5>
                     <p>C# is my preferred object oriented programming language. I use it on creating game mechanics scripts</p>
                 </div>
                 <div class="backgrounds-col sec-col">
-                        <h1>Software and Tools</h1>
-                        <p>There are alot more tools I use. For version control I use <b>GitHub</b>. I'm also fairly proficient use <b>Adobe</b> apps ie. <b>Photoshop</b>, <b>Illustrator</b>, <b>Adobe XD</b></p>
-                    </div>
+                    <img src="images/toolslogo.png" alt="c#" style="height: 90px;">
+                    <h5>Software and Tools</h5>
+                    <p>There are alot more tools I use. For version control I use <b>GitHub</b>. I'm also fairly proficient use <b>Adobe</b> apps ie. <b>Photoshop</b>, <b>Illustrator</b>, <b>Adobe XD</b></p>
+                </div>
             </div>
         </div>
         <div id="cat-works" class="fullcat">
@@ -109,10 +115,30 @@
         </div>
     </section>
 
+    <!--MAIN FOOTER-->
+    <footer>
+        <div class="inner-container">
+            <div class="wrap">
+                <aside class="pic-of-me">
+                    <img src="images/pic-of-me.jpg" alt="my-pic">
+                </aside>
+                <div class="socials">
+                    <a href="#" title="Visit my Facebook"><img src="./images/fb.png" alt="" style="width: 64px;"></a>
+                    <a href="#" title="Visit my Facebook"><img src="./images/ig.png" alt="" style="width: 64px;"></a>
+                    <a href="#" title="Visit my Facebook"><img src="./images/lin.png" alt="" style="width: 64px;"></a>
+                    <a href="#" title="Visit my Facebook"><img src="./images/tw.png" alt="" style="width: 64px;"></a>
+                </div>
+            </div>
+            <div class="message">
+                <p>Hey you've made it to the end, hook me up on my socials down there! Hope to work with you in the future :)</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/jquery-3.5.1.min.js"></script>
     <script src="./js/jquery.lettering.js"></script>
     <script src="./js/jquery.fittext.js"></script>
     <script src="./js/jquery.textillate.js"></script>
-
-    <script src="./js/script.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 </html>

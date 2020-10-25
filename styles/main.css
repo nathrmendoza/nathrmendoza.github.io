@@ -294,6 +294,7 @@ strong, b {
   top: 0;
   left: 0;
   z-index: 99;
+  pointer-events: none;
 }
 
 #hero .hero-outer-cont:last-child {
@@ -317,6 +318,7 @@ strong, b {
 
 #hero .first-banner {
   text-align: center;
+  pointer-events: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -384,7 +386,7 @@ strong, b {
 }
 
 .fullcat {
-  margin-top: 18vh;
+  margin-top: 72px;
 }
 
 /*BACKGROUND*/
@@ -393,15 +395,32 @@ strong, b {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
 .backgrounds-col {
-  max-width: 300px;
+  width: 33.333%;
+}
+
+.backgrounds-col:first-child {
+  padding-right: 5px;
+}
+
+.backgrounds-col:last-child {
+  padding-left: 5px;
+}
+
+.backgrounds-col:nth-child(2) {
+  padding: 0 5px;
+}
+
+.backgrounds-col h5 {
+  margin-bottom: 8px;
 }
 
 .sec-row {
@@ -410,8 +429,8 @@ strong, b {
           align-items: flex-start;
 }
 
-.sec-col {
-  max-width: 400px !important;
+.sec-col:last-child {
+  width: 66.666%;
 }
 
 /*WORKS*/
@@ -544,5 +563,171 @@ a {
 
 .workrow .work-col .work-links a:hover {
   opacity: 0.8;
+}
+
+#cat-works {
+  margin-bottom: 86px;
+}
+
+footer {
+  width: 100%;
+  height: 460px;
+  background: url("../images/banner-bg.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+footer .inner-container {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  opacity: 0;
+}
+
+footer .inner-container .pic-of-me {
+  width: 150px;
+  height: 150px;
+  margin: 0 auto 24px;
+  border-radius: 50%;
+  background: white;
+  text-align: center;
+}
+
+footer .inner-container .pic-of-me img {
+  width: 95%;
+  margin: 0 auto;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  border-radius: 50%;
+}
+
+footer .inner-container .message {
+  position: absolute;
+  top: 24px;
+  left: calc(50% + 50px);
+  background: white;
+  padding: 12px;
+  border-radius: 8px;
+  width: 240px;
+}
+
+footer .inner-container .message span {
+  font-family: "OpenSans-Regular", Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+footer .inner-container .message:after {
+  content: '';
+  position: absolute;
+  left: 12px;
+  bottom: -10px;
+  border-top: 15px solid white;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+}
+
+footer .inner-container .socials a {
+  opacity: 0;
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+}
+
+footer .inner-container .socials a:first-child {
+  -webkit-animation-delay: 600 !important;
+          animation-delay: 600 !important;
+}
+
+footer .inner-container .socials a:nth-child(2) {
+  -webkit-animation-delay: 1200ms !important;
+          animation-delay: 1200ms !important;
+}
+
+footer .inner-container .socials a:nth-child(3) {
+  -webkit-animation-delay: 1800ms !important;
+          animation-delay: 1800ms !important;
+}
+
+footer .inner-container .socials a:last-child {
+  -webkit-animation-delay: 2400ms !important;
+          animation-delay: 2400ms !important;
+}
+
+footer .inner-container.active {
+  -webkit-animation: showme 1s forwards;
+          animation: showme 1s forwards;
+  -webkit-animation-delay: 500ms;
+          animation-delay: 500ms;
+}
+
+footer .inner-container.active .socials a {
+  -webkit-animation: showme 500ms forwards;
+          animation: showme 500ms forwards;
+}
+
+#arrow-go-down {
+  width: 64px;
+  height: 64px;
+  display: block;
+  position: absolute;
+  bottom: 24px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  -webkit-animation: updown 1s linear infinite;
+          animation: updown 1s linear infinite;
+  background: url("../images/godown.png");
+  background-size: cover;
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+@-webkit-keyframes updown {
+  50% {
+    -webkit-transform: translate(-50%, -8px);
+            transform: translate(-50%, -8px);
+  }
+  100% {
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+  }
+}
+
+@keyframes updown {
+  50% {
+    -webkit-transform: translate(-50%, -8px);
+            transform: translate(-50%, -8px);
+  }
+  100% {
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+  }
+}
+
+@-webkit-keyframes showme {
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+}
+
+@keyframes showme {
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
 }
 /*# sourceMappingURL=main.css.map */

@@ -37,4 +37,33 @@ $(document).ready(function(){
             $('.message p').textillate('start');
         }
     })
+
+
+    //VUE WORKS HERE
+    new Vue ({
+        el : "#cat-works",
+        data : {
+            works : [
+                //insert work datas here
+                {name :"Old Portfolio", thumbSrc : "old-port-cover.PNG", tags : ["per", "html", "css", "js","jq"], 
+                desc : "Quick showcase of my old portfolio, that I'm still proud of.", sitelink:"#",codelink:"https://github.com/nathrmendoza/Old-portfolio"},
+
+                {name :"USA Shopper", thumbSrc : "usashopper.png", tags : ["emp", "html", "css", "js","jq"], 
+                desc : "Simple site, was not required to add any complex animations or scripts", sitelink:"https://usashopper.ph/",codelink:"#"},
+
+                {name :"ISOC Holdings", thumbSrc : "isocholdings.png", tags : ["emp", "html", "css", "js","jq"], 
+                desc : "One of the first sites where I've applied animations on my code (open mobile nav lol).", sitelink:"https://isocholdings.com/",codelink:"#"},
+
+                {name :"Concrete Masters Inc.", thumbSrc : "concrete-masters.png", tags : ["emp", "html", "css", "js","jq"], 
+                desc : "A project that I've been given freedom to add my own animations and flare.", sitelink:"https://concretemastersinc.com/",codelink:"#"},
+
+                {name :"Sapporo Products", thumbSrc : "sapporo.png", tags : ["emp", "html", "css", "js","jq"], 
+                desc : "One of the projects I've handled with complex designs.", sitelink:"https://sapporoproducts.com/",codelink:"#"},
+
+                {name :"Dynamic Brands International", thumbSrc : "dynamic.png", tags : ["emp", "html", "css", "js","jq"], 
+                desc : "Very elegant and minimialistic design, was relatively simple to implement on code.", sitelink:"https://dynamicbrandsinternational.com/",codelink:"#"},
+                
+            ]
+        }
+    });
 });

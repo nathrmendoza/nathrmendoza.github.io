@@ -85,34 +85,42 @@
                 </div>
             </div>
         </div>
+        
         <div id="cat-works" class="fullcat">
             <h1>Works</h1>
             <p>Here are some of my personal/professional projects. Have a look and see!
             </p>
-                <div class="workrow">
-                    <div class="work-col">
+            <div class="workrow">
+
+                <div class="work-col" v-for="work in works">
+                    <div class="wrap">
                         <div class="top">
-                            <h1>Old Portfolio</h1>
-                            <div class="img-cont"><img src="./images/old-port-cover.PNG" alt="pic"></div>
+                            <h1>{{work.name}}</h1>
+                            <div class="img-cont"><img :src="'./images/' + work.thumbSrc" alt="pic"></div>
                             <div class="tags">
-                                <p class="type per">Personal</p>
-                                <p class="type htm">HTML</p>
-                                <p class="type css">CSS3</p>
-                                <!-- <p class="type vue">Vue</p> -->
-                                <p class="type jss">Javascript</p>
-                                <p class="type jqu">JQuery</p>
+                                <p class="type per" v-if="work.tags.includes('per')">Personal</p>
+                                <p class="type per" v-if="work.tags.includes('emp')">Employer</p>
+                                <p class="type htm" v-if="work.tags.includes('html')">HTML</p>
+                                <p class="type css" v-if="work.tags.includes('css')">CSS3</p>
+                                <p class="type vue" v-if="work.tags.includes('vue')">Vue</p>
+                                <p class="type jss" v-if="work.tags.includes('js')">Javascript</p>
+                                <p class="type jqu" v-if="work.tags.includes('jq')">JQuery</p>
                             </div>
                             <div class="work-des">
-                                <p>Quick showcase of my old portfolio, that I'm still proud of.</p>
+                                <p>{{work.desc}}</p>
                             </div>
                         </div>
                         <div class="work-links">
-                            <a href="Archives/oldportfolio/index.html" target="_blank">Site</a>
-                            <a href="https://github.com/nathrmendoza/Old-portfolio" target="_blank">Code</a>
+                            <a :href="work.sitelink" target="_blank">Site</a>
+                            <a  v-if="work.codelink != '#'" :href="work.codelink" target="_blank">Code</a>
                         </div>
                     </div>
                 </div>
+
+            </div>
         </div>
+
+
     </section>
 
     <!--MAIN FOOTER-->
@@ -139,6 +147,7 @@
     <script src="./js/jquery.lettering.js"></script>
     <script src="./js/jquery.fittext.js"></script>
     <script src="./js/jquery.textillate.js"></script>
+    <script src="./js/vue.js"></script>
     <script src="./js/main.js"></script>
 </body>
 </html>

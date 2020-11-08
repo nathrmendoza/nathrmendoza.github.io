@@ -28,6 +28,8 @@
 }
 
 @media screen and (max-width: 999px) {
+    .workrow .work-col h1 {font-size: 28px!important; line-height: 32px!important;}
+
     #main {padding: 24px 32px;}
     footer .inner-container .message{left: 50%!important; top: 32px; transform: translate(-50%, 0);}
     footer .inner-container .message:after {left: calc(50% - 10px);}
@@ -43,4 +45,6 @@
     .backgrounds-col,.sec-col:last-child {width: 100%; max-width: 400px; margin: 0 auto; margin-bottom: 24px; text-align: center;}
 
     .workrow .work-col {width: 100%!important;}
+
+    #hero .secon-banner .wrap-content .hero-cont {padding: 12px;}
 }

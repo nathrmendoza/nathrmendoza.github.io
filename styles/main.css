@@ -388,6 +388,13 @@ strong, b {
 
 .fullcat {
   margin-top: 72px;
+  padding-bottom: 24px;
+  -webkit-transition: all 800ms ease-out;
+  transition: all 800ms ease-out;
+}
+
+.fullcat h1 {
+  margin-bottom: 12px;
 }
 
 /*BACKGROUND*/
@@ -458,6 +465,8 @@ a {
 }
 
 .workrow .work-col {
+  -webkit-transition: all 500ms ease;
+  transition: all 500ms ease;
   width: 33.333%;
   color: #333;
   margin: 0;
@@ -618,6 +627,8 @@ footer .inner-container {
       -ms-flex-pack: center;
           justify-content: center;
   position: relative;
+  -webkit-transition: all 800ms ease;
+  transition: all 800ms ease;
   opacity: 0;
 }
 
@@ -757,5 +768,11 @@ footer .inner-container.active .socials a {
     -webkit-transform: translate(0);
             transform: translate(0);
   }
+}
+
+.showcontent {
+  opacity: 1 !important;
+  -webkit-transform: translate(0) !important;
+          transform: translate(0) !important;
 }
 /*# sourceMappingURL=main.css.map */

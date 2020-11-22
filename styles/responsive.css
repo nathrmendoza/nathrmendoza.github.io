@@ -36,6 +36,8 @@
     footer .inner-container .pic-of-me {margin-top: 64px;}
 
     .workrow .work-col {width: 50%!important;}
+
+    .backgrounds-row{margin: 26px 0;}
 }
 
 @media screen and (max-width: 600px) {
@@ -49,4 +51,6 @@
     #hero .secon-banner .wrap-content .hero-cont {padding: 12px;}
 
     #hero .first-banner h3 {font-size: 28px!important; line-height: 32px!important;}
+
+    /* .work-col{transition-delay: 0!important;} */
 }

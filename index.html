@@ -111,7 +111,7 @@
                             </div>
                         </div>
                         <div class="work-links">
-                            <a :href="work.sitelink" target="_blank">Site</a>
+                            <a v-if="work.sitelink != '#'" :href="work.sitelink" target="_blank">Site</a>
                             <a  v-if="work.codelink != '#'" :href="work.codelink" target="_blank">Code</a>
                         </div>
                     </div>

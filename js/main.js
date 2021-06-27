@@ -21,6 +21,15 @@ new Vue ({
 
             {name :"Dynamic Brands International", thumbSrc : "dynamic.png", tags : ["emp", "html", "css", "js","jq"], 
             desc : "Very elegant and minimialistic design, was relatively simple to implement on code.", sitelink:"https://dynamicbrandsinternational.com/",codelink:"#"},
+
+            {name : "Cuadro PH", thumbSrc: "cuadro.png", tags: ["emp", "html", "css", "js", "jq"],
+            desc : "Very technical website, Most challenging part in development would be the frame service page.", sitelink:"https://cuadroph.com", codelink: "#"},
+
+            {name :"OneToTree", thumbSrc: "onetotree.png", tags: ['emp', 'html', 'css','js','jq'],
+            desc : "Project that I've worked on the frontend for. Fairly simple conversion.", sitelink: "https://onetotree.org", codelink: "#"},
+
+            {name :"Economist", thumbSrc: "economist-banner.jpg", tags: ['emp', 'html', 'css', 'js', 'jq', 'php'], sitelink: "#", codelink: "#",
+            desc : "Worked with a multitude of economist projects. I was responsible for making the frontend of these sites and some of the wordpress/cms/backend as well. Some of the most notable ones are Microsoft, Google India, Huawei Innovation."}
             
         ]
     }
